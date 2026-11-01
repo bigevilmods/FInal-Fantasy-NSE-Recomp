@@ -1,4 +1,4 @@
-![Screenshot do Final Fantasy NSE Recomp](blob:https://imgur.com/88cb35dc-5463-4827-9b7a-01ab82b3f3aa)
+![Screenshot do Final Fantasy NSE Recomp](https://i.imgur.com/ZxTq9pL.png)
 # Final Fantasy NSE Recomp
 Final Fantasy Recomp
 Pre Requisites
