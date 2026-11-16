@@ -1,0 +1,39 @@
+{
+    "$schema": "https://recomplauncher.com/schema/recomplauncher.json",
+    "format": 1,
+    "name": "Final Fantasy NES Recomp",
+    "repo": "bigevilmods/FInal-Fantasy-NSE-Recomp",
+    "game": {
+        "kind": "iso",
+        "label": "Your Final Fantasy (USA).nes ROM, the North American NES release."
+    },
+    "prepare": {
+        "program": [
+            "powershell.exe"
+        ],
+        "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-File",
+            "{install}/build.ps1",
+            "-Rom",
+            "{game}"
+        ],
+        "label": "Building the game from your ROM",
+        "timeout": 900
+    },
+    "start": {
+        "program": [
+            "ff1.exe",
+            "FinalFantasy.exe"
+        ],
+        "args": [
+            "--game",
+            "{game}"
+        ]
+    },
+    "requires": [
+        "start"
+    ]
+}
