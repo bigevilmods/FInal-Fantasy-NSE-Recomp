@@ -1,4 +1,7 @@
 ![Screenshot do Final Fantasy NSE Recomp](https://i.imgur.com/ZxTq9pL.png)
+
+<a href="https://recomplauncher.com/game/final-fantasy-nse-recomp"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
+
 # Final Fantasy NSE Recomp
 Final Fantasy Recomp
 Pre Requisites

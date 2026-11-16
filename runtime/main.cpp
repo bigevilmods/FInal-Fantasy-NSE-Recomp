@@ -100,12 +100,16 @@ static LRESULT CALLBACK wndproc(HWND h, UINT m, WPARAM wp, LPARAM lp) {
 
 int WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show) {
     (void)prev; (void)cmd;
+    char rom_path[MAX_PATH] = "Final Fantasy (USA).nes";
+    for (int i = 1; i + 1 < __argc; i++)
+        if (strcmp(__argv[i], "--game") == 0)
+            GetFullPathNameA(__argv[i + 1], MAX_PATH, rom_path, nullptr);
     SetProcessDPIAware();
     char executable[MAX_PATH];
     GetModuleFileNameA(nullptr, executable, MAX_PATH);
     char *directory_end = strrchr(executable, '\\');
     if (directory_end) { *directory_end = 0; SetCurrentDirectoryA(executable); }
-    load_rom("Final Fantasy (USA).nes");
+    load_rom(rom_path);
     load_sram();
     nes_init();
     hd_init("assets/handdrawn/pack.ffhd");
